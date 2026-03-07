@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agjet Voyage — Discover Tanzania | Luxury Safaris & Authentic Tours</title>
+  <meta name="description" content="Agjet Voyage — Arusha-based tour operator. Kilimanjaro climbs, Great Migration safaris, cultural & beach holidays across Tanzania." />
+  <meta name="theme-color" content="#072b22" />
+
+  <!-- Favicons (inline SVG fallback) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230b8a5f' width='100' height='100' rx='16'/%3E%3Ctext x='50' y='58' font-size='48' text-anchor='middle' fill='white' font-family='Inter,Arial' font-weight='700'%3EAV%3C/text%3E%3C/svg%3E">
+
+  <!-- Styles (single-file, modern UI) -->
+  <style>
+    :root{
+      --bg1: #f3faf6;
+      --bg2: #e8f6f0;
+      --accent: #0b8a5f;
+      --accent-2: #064b3a;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --glass: rgba(255,255,255,0.6);
+      --maxW: 1200px;
+      --radius: 14px;
+      --shadow-lg: 0 20px 40px rgba(7,37,30,0.12);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:#04221a;-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--maxW);margin:28px auto;padding:20px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:white;font-weight:800;font-size:20px}
+    .brand h1{margin:0;font-size:20px}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{color:inherit;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800}
+
+    /* Hero */
+    .hero{margin-top:22px;display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.95),#fff);padding:28px;border-radius:18px;box-shadow:var(--shadow-lg)}
+    .eyebrow{display:inline-block;background:rgba(11,138,95,0.08);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:800;font-size:13px}
+    h2{font-size:30px;margin:12px 0}
+    p.lead{color:var(--muted);margin:0}
+    .cta-row{display:flex;gap:12px;margin-top:18px}
+
+    /* Booking panel */
+    .panel{background:linear-gradient(180deg,#ffffff,#f7fffb);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(5,32,24,0.06)}
+    .panel h3{margin:0 0 8px}
+    .form-grid{display:grid;gap:10px}
+    input,select,textarea{padding:12px;border-radius:10px;border:1px solid #e8f2ef}
+    .btn-ghost{padding:10px;border-radius:10px;border:2px solid var(--accent);background:transparent;color:var(--accent);font-weight:800}
+
+    /* Features grid */
+    section{margin-top:22px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(6,30,24,0.04)}
+    .card h4{margin:0 0 6px}
+    .small{color:var(--muted);font-size:14px}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:10px}
+
+    /* Migration promo */
+    .promo{display:flex;gap:14px;align-items:center}
+    .promo img{width:300px;height:180px;object-fit:cover;border-radius:12px}
+
+    /* Footer */
+    footer{margin-top:26px;padding:18px;border-radius:12px;background:linear-gradient(180deg,#072b22,#06372f);color:#e6fff6}
+    footer .links a{color:#e6fff6;text-decoration:none;margin-right:12px;font-weight:700}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+
+    @media (max-width:520px){
+      .gallery img{height:110px}
+    }
+
+    /* Micro interactions */
+    .card, .panel, .hero-card{transition:transform .36s cubic-bezier(.2,.9,.2,1), box-shadow .36s}
+    .card:hover, .panel:hover{transform:translateY(-6px)}
+
+    /* accessibility helpers */
+    a:focus,button:focus,input:focus,select:focus,textarea:focus{outline:3px solid rgba(11,138,95,0.12);outline-offset:3px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">AV</div>
+        <div>
+          <h1>Agjet Voyage</h1>
+          <p>Arusha • Tanzania — Since Dec 2023</p>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#activities">Activities</a>
+        <a href="#migration">Migration</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-primary" href="mailto:agjetvoyage@gmail.com">Book Now</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="hero-card">
+        <span class="eyebrow">From Arusha</span>
+        <h2>Explore Tanzania — Kilimanjaro, Serengeti & Zanzibar</h2>
+        <p class="lead">We craft unforgettable safaris, mountain hikes, cultural experiences and beach escapes. Travel small-group or private, with expert local guides and responsible tourism at the heart of everything we do.</p>
+
+        <div class="cta-row">
+          <a class="btn-primary" href="#contact">Get a Custom Quote</a>
+          <a class="btn-ghost" href="https://wa.me/255620771228">WhatsApp Us</a>
+        </div>
+
+        <section id="highlights" style="margin-top:18px">
+          <div class="grid">
+            <div class="card">
+              <h4>Mountain Hiking</h4>
+              <p class="small">Guided climbs of Kilimanjaro and Mount Meru with safety, acclimatization and local guides.</p>
+            </div>
+            <div class="card">
+              <h4>Game Driving Safaris</h4>
+              <p class="small">Tailored safaris across Serengeti, Tarangire, Manyara and Ngorongoro Crater.</p>
+            </div>
+            <div class="card">
+              <h4>Beach & Island Holidays</h4>
+              <p class="small">Zanzibar packages with snorkeling, dhow trips and luxury to midrange stays.</p>
+            </div>
+          </div>
+        </section>
+
+        <section style="margin-top:16px;">
+          <div class="grid">
+            <div class="card">
+              <h4>Cultural Tours</h4>
+              <p class="small">Village visits, city tours, local cuisine experiences and historical sites like Kilwa and Amboni Caves.</p>
+            </div>
+            <div class="card">
+              <h4>Bicycle & Walking Tours</h4>
+              <p class="small">Slow travel options to immerse in local life and landscapes.</p>
+            </div>
+            <div class="card">
+              <h4>Custom Itineraries</h4>
+              <p class="small">We design trips to match your interests, dates and budget — including permits and logistics.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="panel" aria-labelledby="bookingTitle">
+        <h3 id="bookingTitle">Quick Booking</h3>
+        <form class="form-grid" onsubmit="event.preventDefault(); quickRequest();">
+          <input id="name" placeholder="Full name*" required />
+          <input id="email" type="email" placeholder="Email*" required />
+          <select id="interest">
+            <option>Kilimanjaro Climb</option>
+            <option>Serengeti Migration Safari</option>
+            <option>Zanzibar Beach Holiday</option>
+            <option>Cultural Tour</option>
+            <option>Custom / Other</option>
+          </select>
+          <input id="dates" placeholder="Preferred dates (e.g. 2026-07-10 to 2026-07-18)" />
+          <textarea id="notes" placeholder="Any notes (group size, special requests)" rows="3"></textarea>
+          <div style="display:flex;gap:8px">
+            <button class="btn-primary" type="submit">Request Quote</button>
+            <a class="btn-ghost" href="tel:+255620771228">Call / WhatsApp</a>
+          </div>
+
+          <div style="font-size:13px;color:var(--muted);margin-top:8px">
+            <div><strong>TIN:</strong> 155-194-304</div>
+            <div><strong>BRELA:</strong> AGJET VOYAGE (Reg. no.611476)</div>
+          </div>
+        </form>
+      </aside>
+    </main>
+
+    <!-- Migration section -->
+    <section id="migration">
+      <h3>Explore the Great Migration</h3>
+      <div class="promo card" style="margin-top:10px">
+        <div>
+          <p class="small">Witness one of nature's greatest spectacles — millions of wildebeest, zebras and gazelles move across the Serengeti. We time our safaris to put you at the best river crossings and photo vantage points.</p>
+          <ul class="small">
+            <li>Flexible durations (3–12+ days)</li>
+            <li>Photography-friendly vehicles</li>
+            <li>Expert naturalist guides</li>
+            <li>Comfortable lodges & mobile camps</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1438786657490-6a947ef7223f?w=900&q=80" alt="Great Migration" />
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section aria-label="Gallery" style="margin-top:18px">
+      <h3>Gallery & Highlights</h3>
+      <div class="gallery" style="margin-top:10px">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=60" alt="Kilimanjaro summit" />
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=60" alt="Safari vehicle" />
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c6?w=800&q=60" alt="Zanzibar beach" />
+        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&q=60" alt="Local culture" />
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=60" alt="Ngorongoro" />
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=60" alt="Wildlife" />
+      </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <section id="contact" style="margin-top:18px">
+      <h3>Contact & Booking</h3>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:16px;margin-top:10px">
+        <div class="card">
+          <h4>Agjet Voyage — Arusha, Tanzania</h4>
+          <p class="small">Email: <a href="mailto:agjetvoyage@gmail.com">agjetvoyage@gmail.com</a><br>WhatsApp: <a href="https://wa.me/255620771228">+255 620 771 228</a><br>Instagram: <a href="https://instagram.com/Agjet_voyage">@Agjet_voyage</a><br>Website: <a href="https://www.agjetvoyage.co.tz">agjetvoyage.co.tz</a></p>
+
+          <h4 style="margin-top:12px">Why travel with us?</h4>
+          <ul class="small">
+            <li>Local guides with deep knowledge of the region</li>
+            <li>Responsible tourism: community & conservation focused</li>
+            <li>Flexible, customizable itineraries</li>
+            <li>Competitive pricing with transparent inclusions</li>
+          </ul>
+        </div>
+
+        <aside class="card">
+          <h4>Quick links</h4>
+          <p class="small"><a href="https://wa.me/255620771228">Message on WhatsApp</a><br><a href="mailto:agjetvoyage@gmail.com">Send an email</a></p>
+
+          <div style="margin-top:12px;font-size:13px;color:var(--muted)">
+            <strong>Address</strong>
+            <p>Arusha, Tanzania</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <div>
+          <div style="font-weight:800">Agjet Voyage</div>
+          <div style="font-size:13px;color:#cfeee0">Explore Tanzania — Kilimanjaro, Serengeti, Zanzibar</div>
+        </div>
+        <div class="links">
+          <a href="https://wa.me/255620771228">WhatsApp</a>
+          <a href="https://instagram.com/Agjet_voyage">Instagram</a>
+          <a href="mailto:agjetvoyage@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;font-size:13px;color:#b6dfce">&copy; <span id="year"></span> Agjet Voyage — All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    // dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function quickRequest(){
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const interest = document.getElementById('interest').value;
+      // In a real site you'd send this to your backend or API. For now we'll open WhatsApp with a prefilled message.
+      const message = encodeURIComponent(`Hello Agjet Voyage! My name is ${name}. I'm interested in: ${interest}. Email: ${email}. Please send a quote.`);
+      window.open(`https://wa.me/255620771228?text=${message}`, '_blank');
+    }
+  </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TravelAgency",
+    "name":"Agjet Voyage",
+    "url":"https://www.agjetvoyage.co.tz",
+    "logo":"https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=60",
+    "contactPoint":{"@type":"ContactPoint","telephone":"+255620771228","contactType":"customer service","email":"agjetvoyage@gmail.com"},
+    "address":{"@type":"PostalAddress","addressLocality":"Arusha","addressCountry":"TZ"},
+    "sameAs":["https://instagram.com/Agjet_voyage","https://wa.me/255620771228"]
+      }
+  </script>
+</body>
+</html>
